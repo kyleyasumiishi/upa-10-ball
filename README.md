@@ -16,7 +16,7 @@ freeCodeCamp is a non-profit organization that consists of an interactive learni
 
 My goal for each freeCodeCamp project is simply to learn about and practice using new web development concepts and techniques.
 
-Here's are new concepts I learned and practiced by building this project:
+Here are a few new concepts I learned and practiced by building this project:
 
 - HTML5 <code>header</code> element
 - Used a CSS media query to create a responsive side navigation
