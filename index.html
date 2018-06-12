@@ -6,26 +6,84 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>10-Ball Rules</title>
     <link rel="stylesheet" href="stylesheet.css"> 
+
+    <style>
+        body {
+            margin: 0;
+        }
+        #navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 25%;
+            background-color: #f1f1f1;
+            position: fixed;
+            top: 0;
+            height: 100%;
+            overflow: auto;
+        }
+        #navbar-header {
+            text-align: center;
+        }
+        .nav-link {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        .nav-link.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .nav-link:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+        main#main-doc {
+            margin-left: 25%;
+            padding: 1px 16px;
+        }
+
+        @media screen and (max-width: 400px) {
+            #navbar ul {
+                width: 100%;
+                height: 50vh;
+                overflow: auto;
+                position: relative;
+            }
+            .nav-link {
+                text-align: center;
+                float: none;
+            }
+            main#main-doc {
+                margin-left: 0;
+            }
+        }
+
+    </style>
+
 </head>
 <body>
 
   <nav id="navbar">
-    <header>
-      <h1>10-Ball</h1>
-    </header>
-    <ul>
-      <li><a class="nav-link" href="#Object_of_the_Game">Object of the Game</a></li>
-      <li><a class="nav-link" href="#Lag_for_Break">Lag for Break</a></li>
-      <li><a class="nav-link" href="#Legal_Break_Shot">Legal Break Shot</a></li>
-      <li><a class="nav-link" href="#10-Ball_Pocketed_on_the_Break">10-Ball Pocketed on the Break</a></li>
-      <li><a class="nav-link" href="#Push_Out">Push Out</a></li>
-      <li><a class="nav-link" href="#Continuing_Play_-_Call_Pocket">Continuing Play - Call Pocket</a></li>
-      <li><a class="nav-link" href="#Ball_in_Hand_Foul_Penalties">Ball in Hand Foul Penalties</a></li>
-      <li><a class="nav-link" href="#Loss_of_Game">Loss of Game</a></li>
-      <li><a class="nav-link" href="#General_Pool_Rules">General Pool Rules</a></li>
-      <li><a class="nav-link" href="#Tournament_Director/Referees">Tournament Director/Referees</a></li>
-      <li><a class="nav-link" href="#Special_Rulings">Special Rulings</a></li>
-      <li><a class="nav-link" href="#Reference">Reference</a></li>
+      <ul>
+        <div id="navbar-header">
+        <header>
+          <h1>10-Ball</h1>
+        </header>
+        </div>
+        <li><a class="nav-link active" href="#Object_of_the_Game" onclick="changeActive()">Object of the Game</a></li>
+        <li><a class="nav-link" href="#Lag_for_Break" onclick="changeActive()">Lag for Break</a></li>
+        <li><a class="nav-link" href="#Legal_Break_Shot" onclick="changeActive()">Legal Break Shot</a></li>
+        <li><a class="nav-link" href="#10-Ball_Pocketed_on_the_Break" onclick="changeActive()">10-Ball Pocketed on the Break</a></li>
+        <li><a class="nav-link" href="#Push_Out" onclick="changeActive()">Push   Out</a></li>
+        <li><a class="nav-link" href="#Continuing_Play_-_Call_Pocket" onclick="changeActive()">Continuing Play - Call Pocket</a></li>
+        <li><a class="nav-link" href="#Ball_in_Hand_Foul_Penalties" onclick="changeActive()">Ball in Hand Foul Penalties</a></li>
+        <li><a class="nav-link" href="#Loss_of_Game" onclick="changeActive()">Loss of Game</a></li>
+        <li><a class="nav-link" href="#General_Pool_Rules" onclick="changeActive()">General Pool Rules</a></li>
+        <li><a class="nav-link" href="#Tournament_Director/Referees" onclick="changeActive()">Tournament Director/Referees</a></li>
+        <li><a class="nav-link" href="#Special_Rulings" onclick="changeActive()">Special Rulings</a></li>
+        <li><a class="nav-link" href="#Reference" onclick="changeActive()">Reference</a></li>
     </ul>
   </nav>
       
@@ -315,6 +373,19 @@
     </section> 
 
   </main>  
-      
+  <script>
+    function changeActive() {
+        let id = event.target.hash;
+        let navLinks = document.getElementsByClassName('nav-link');
+        for (let i = 0; i < navLinks.length; i++) {
+            let navLink = navLinks[i];
+            if (id === navLink.hash) {
+                navLink.classList.add('active');
+            } else if (navLink.classList.contains('active')) {
+                navLink.classList.remove('active');
+            };
+        };
+    };
+  </script>
 </body>
 </html>
