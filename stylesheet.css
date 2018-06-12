@@ -1,3 +1,8 @@
+/* For FCC testing */
+#navbar {
+    position: fixed;
+    top: 0;
+}
 /* Navigation Bar */
 body {
     margin: 0;
@@ -50,6 +55,9 @@ main#main-doc {
     }
 }
 /* Main Section */
+#title {
+    text-align: center;
+}
 .underline {
     text-decoration: underline;
 }
