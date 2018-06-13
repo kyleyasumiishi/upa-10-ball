@@ -3,7 +3,7 @@
 I love playing pool, and I recently joined the UPA Pool League in Seattle. We play <a href="https://en.wikipedia.org/wiki/Ten-ball" target="_blank">10-ball</a> in this league, which is arguably a slightly more challenging variation of 9-ball since all shots must be called and slop shots are penalized. The official rules for 8-ball, 9-ball, and 10-ball are all on the <a href="https://upatour.com/official-billiard-rules/" target="_blank">UPA website</a>, but I wanted an easily accessible, mobile-friendly 10-ball rulebook that I could reference on my iPhone in between matches. That's why I made this simple <a href="https://kyleyasumiishi.github.io/upa-10-ball/" target="_blank">10-ball rules app</a> and added it to my iPhone's Home Screen.
 
 <p align="center">
-<a href="https://kyleyasumiishi.github.io/upa-10-ball/" target="_blank"><img src="https://doc-0g-c0-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/klml4jtt34k99sbcv5a7s916tlaa4kb3/1528833600000/05674985809815878505/*/1Q_oRM6CJJMSjEcMQf0cuF-qTysxKjRc3" alt="10-ball rules app on iPhone" width="400" height="400"></a>
+<a href="https://kyleyasumiishi.github.io/upa-10-ball/" target="_blank"><img src="https://gdurl.com/mHr9G" alt="10-ball rules app on iPhone" width="400" height="400"></a>
 </p>
 
 ## About
