@@ -1,3 +1,8 @@
+:root {
+  --light-gray: #F4F4F4;
+  --dark-gray: #393D3F;
+  --blue: #62929E;
+}
 /* For FCC testing */
 #navbar {
     position: fixed;
@@ -6,7 +11,10 @@
 body {
     margin: 0;
 }
-/* Navigation Bar */
+/* 
+Navigation Bar 
+Modified CSS code from W3Schools navbar examples: https://www.w3schools.com/Css/css_navbar.asp
+*/
 #navbar {
     font-family: "Open Sans", arial, sans-serif;
 }
@@ -15,7 +23,7 @@ body {
     margin: 0;
     padding: 0;
     width: 25%;
-    background-color: #f1f1f1;
+    background-color: var(--light-gray);
     position: fixed;
     top: 0;
     height: 100%;
@@ -31,18 +39,18 @@ body {
     text-decoration: none;
 }
 .nav-link.active {
-    background-color: #4CAF50;
+    background-color: var(--blue);
     color: white;
 }
 .nav-link:hover:not(.active) {
-    background-color: #555;
+    background-color: var(--dark-gray);
     color: white;
 }
 main#main-doc {
     margin-left: 25%;
-    padding: 1px 16px;
+    padding: 20px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     #navbar {
         position: relative;
     }
@@ -68,6 +76,12 @@ main#main-doc {
     text-decoration: underline;
 }
 main {
+    line-height: 1.5;
+    font-family: "Open Sans", arial, sans-serif;
+}
+code {
+    margin-top: 16px;
+    margin-bottom: 16px;
     line-height: 1.5;
     font-family: "Open Sans", arial, sans-serif;
 }
